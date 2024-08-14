@@ -1,14 +1,9 @@
 package com.ndako_pay.ndako_pay.dto;
 
 import java.util.Set;
-import java.util.UUID;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
-import jakarta.persistence.PrimaryKeyJoinColumn;
 import lombok.Getter;
 import lombok.Setter;
 
