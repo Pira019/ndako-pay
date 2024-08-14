@@ -5,7 +5,7 @@ pipeline {
             agent any
             steps {
               withSonarQubeEnv(installationName : 'sonarQube') {
-                sh './mvnw clean org.sonarsource.scanner.maven:sonar-maven-plugin:3.9.0.2155:sonar'
+                bat './mvnw clean org.sonarsource.scanner.maven:sonar-maven-plugin:3.9.0.2155:sonar'
               }
             }
           }
