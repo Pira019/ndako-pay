@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/ndekocash")
 public class TestController {
 	
-	@GetMapping
+	@GetMapping("/")
 	public String home() {
 		return "test loll";
 	}
