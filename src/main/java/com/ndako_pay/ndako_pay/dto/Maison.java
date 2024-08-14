@@ -15,6 +15,7 @@ import lombok.Setter;
 @Entity
 public class Maison {
 
+	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.UUID)
 	private UUID id;
