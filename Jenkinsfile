@@ -1,11 +1,11 @@
 pipeline {
-        agent none
+        agent any
         stages {
           stage("build & SonarQube analysis") {
             agent any
             steps {
-              withSonarQubeEnv('sonarQube') {
-                sh 'mvn clean package sonar:sonar'
+              withSonarQubeEnv(installatioName : 'sonarQube') {
+                sh 'mvn clean org.sonarsource.scanner.maven:sonar-maven-plugin:6.1.0.4477:sonar'
               }
             }
           }
