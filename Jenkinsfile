@@ -4,7 +4,7 @@ pipeline {
         
 	      stage("Build") { 
 	            steps {
-	                bat './mvnw clean install' // Compile le projet
+	                bat './mvnw clean install' // Compile le projetfr
 	            }
 	        }
           stage("build & SonarQube analysis") { 
