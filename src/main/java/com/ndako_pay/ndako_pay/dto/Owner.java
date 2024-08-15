@@ -8,11 +8,11 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Getter
-@Setter  
+@Setter
 @Entity
-public class Owner extends Person { 
-	 
-	private static final long serialVersionUID  = 1L;
+public class Owner extends Person {
+
+	private static final long serialVersionUID = 1L;
 	private String adresse;
 	@OneToMany(mappedBy = "owner")
 	private Set<Maison> maisons;
